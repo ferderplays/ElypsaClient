@@ -1,0 +1,16 @@
+[
+{
+  "modid": "elypsaclient",
+  "name": "Elypsa Client",
+  "description": "A 1.12 minecraft utlity mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ferderplays"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
