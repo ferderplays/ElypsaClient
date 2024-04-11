@@ -25,7 +25,7 @@ public class Main
     @Mod.Instance
     public Main instance;
 
-    public static ModuleManager moduleManager;
+    public static ModuleManager moduleManager = new ModuleManager();
     public Minecraft mc = Minecraft.getMinecraft();
     public static Logger logger;
 
@@ -40,13 +40,12 @@ public class Main
     {
         MinecraftForge.EVENT_BUS.register(instance);
         MinecraftForge.EVENT_BUS.register(new HUD());
-        moduleManager = new ModuleManager();
         mc.gameSettings.gammaSetting = 10000;
     }
 
     @EventHandler
     public void postInit(FMLPreInitializationEvent event) {
-        //ClientDirectoryUtil.init();
+        ClientDirectoryUtil.init();
     }
 
     @SubscribeEvent

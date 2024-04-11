@@ -12,6 +12,6 @@ public class FullBright extends Module {
 
     @Override
     public void modAction() {
-        mc.gameSettings.gammaSetting = 12;
+        mc.gameSettings.gammaSetting = 10000;
     }
 }

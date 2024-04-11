@@ -42,4 +42,16 @@ public class FileUtil extends Util {
         if (dir.exists()) return;
         else dir.mkdir();
     }
+
+    public static void createFile(String path, String filename) {
+        File file = new File(path + "/" + filename);
+        if (file.isFile()) return;
+        else {
+            try {
+                file.createNewFile();
+            } catch (Exception e) {
+                Main.logger.error("Unable to make file");
+            }
+        }
+    }
 }
